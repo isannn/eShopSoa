@@ -35,6 +35,11 @@ namespace SimpleAPI
 
             app.UseOwin(appBuilder =>
             {
+                appBuilder(next => currentEnv =>
+                {
+                    Console.WriteLine("Got request");
+                    return next(currentEnv);
+                });
                 appBuilder.UseNancy();
             });
 

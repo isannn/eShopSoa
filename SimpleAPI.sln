@@ -5,12 +5,16 @@ VisualStudioVersion = 16.0.31727.386
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SimpleAPI", "SimpleAPI\SimpleAPI.csproj", "{D29B3F54-2193-436A-9829-5CCFB4DCDE08}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SimpleAPI.Test", "SimpleAPI.Test\SimpleAPI.Test.csproj", "{BDC4B62D-1358-45E0-8315-C25A75C970E7}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SimpleAPI.Test", "SimpleAPI.Test\SimpleAPI.Test.csproj", "{BDC4B62D-1358-45E0-8315-C25A75C970E7}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "CI", "CI", "{64729CAA-03E9-444A-970D-72CCBA343C8C}"
 	ProjectSection(SolutionItems) = preProject
-		..\..\.github\workflows\ci.yml = ..\..\.github\workflows\ci.yml
-		..\..\README.md = ..\..\README.md
+		.github\workflows\ci.yml = .github\workflows\ci.yml
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Assets", "Assets", "{E478B334-AD78-43A3-A1D3-2DEAA9569588}"
+	ProjectSection(SolutionItems) = preProject
+		README.md = README.md
 	EndProjectSection
 EndProject
 Global

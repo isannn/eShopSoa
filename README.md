@@ -13,7 +13,7 @@ Put the code below to Apiary editor:
 
 > FORMAT: 1A
 > 
-> # Author's Name
+> \# Author's Name
 > 
 > Products is a simple API allowing consumers to view product catalog
 > 

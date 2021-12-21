@@ -7,6 +7,7 @@ Solution for book "Microservices on dotnet platform"
 ## Mocking return data for Product Catalog service
 
 Use public tool - https://app.apiary.io
+
 GET endpoint: https://private-8d38cb-alekseiisaev.apiary-mock.com/products
 
 Put the code below to Apiary editor:

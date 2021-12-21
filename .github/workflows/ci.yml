@@ -1,4 +1,4 @@
-name: eShopSoa
+name: build
 on: [push]
 jobs:
   run-unit-tests:

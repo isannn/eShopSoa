@@ -9,6 +9,7 @@ namespace ShoppingCartAPI.Model
         private int _userId;
         private readonly List<ShoppingCartItem> _items;
 
+
         public ShoppingCart(int userId)
         {
             _userId = userId;

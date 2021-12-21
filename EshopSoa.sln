@@ -5,7 +5,7 @@ VisualStudioVersion = 16.0.31727.386
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SimpleAPI", "SimpleAPI\SimpleAPI.csproj", "{D29B3F54-2193-436A-9829-5CCFB4DCDE08}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SimpleAPI.Test", "SimpleAPI.Test\SimpleAPI.Test.csproj", "{BDC4B62D-1358-45E0-8315-C25A75C970E7}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "API.Tests", "SimpleAPI.Test\API.Tests.csproj", "{BDC4B62D-1358-45E0-8315-C25A75C970E7}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "CI", "CI", "{64729CAA-03E9-444A-970D-72CCBA343C8C}"
 	ProjectSection(SolutionItems) = preProject
@@ -16,6 +16,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Assets", "Assets", "{E478B3
 	ProjectSection(SolutionItems) = preProject
 		README.md = README.md
 	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ShoppingCartAPI", "ShoppingCartAPI\ShoppingCartAPI.csproj", "{98A90BBB-20ED-4AD5-923E-F12C3F5BFE77}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -31,6 +33,10 @@ Global
 		{BDC4B62D-1358-45E0-8315-C25A75C970E7}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BDC4B62D-1358-45E0-8315-C25A75C970E7}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BDC4B62D-1358-45E0-8315-C25A75C970E7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{98A90BBB-20ED-4AD5-923E-F12C3F5BFE77}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{98A90BBB-20ED-4AD5-923E-F12C3F5BFE77}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{98A90BBB-20ED-4AD5-923E-F12C3F5BFE77}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{98A90BBB-20ED-4AD5-923E-F12C3F5BFE77}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

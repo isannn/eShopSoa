@@ -7,35 +7,41 @@ namespace ShoppingCartAPI.Model
     public class ShoppingCart
     {
         private int _userId;
-        public List<ShoppingCartItem> ShoppingCartItems { get; }
+        private readonly List<ShoppingCartItem> _items;
+
 
         public ShoppingCart(int userId)
         {
             _userId = userId;
-            ShoppingCartItems = new List<ShoppingCartItem>();
+            _items = new List<ShoppingCartItem>();
         }
 
 
         public void AddItems(IEnumerable<ShoppingCartItem> shoppingCartItems, IEventStore eventStore)
         {
-            foreach (var shoppingCartItem in shoppingCartItems)
+            foreach (var item in shoppingCartItems)
             {
-                ShoppingCartItems.Add(shoppingCartItem);
-                eventStore.AddEvent("AddProductItem", shoppingCartItem);
+                _items.Add(item);
+                eventStore.Raise("ShoppingCartItemAdded", new { _userId, item });
             }
         }
 
-        public void RemoveItems(int[] shoppingCartItems, IEventStore eventStore)
+        public void RemoveItems(int[] catalogProductIds, IEventStore eventStore)
         {
-            foreach (var shoppingCartItem in shoppingCartItems)
+            foreach (var productId in catalogProductIds)
             {
-                var productItem = ShoppingCartItems.FirstOrDefault(item => item.GetProductId() == shoppingCartItem);
-                if (productItem != null)
+                var shoppingCartItem = _items.FirstOrDefault(item => item.GetProductId() == productId);
+                if (shoppingCartItem != null)
                 {
-                    ShoppingCartItems.Remove(productItem);
-                    eventStore.AddEvent("RemoveProductItem", productItem);
+                    _items.Remove(shoppingCartItem);
+                    eventStore.Raise("RemoveProductItem", new { _userId, shoppingCartItem });
                 }
             }
+        }
+
+        public int GetUserId()
+        {
+            return _userId;
         }
     }
 }

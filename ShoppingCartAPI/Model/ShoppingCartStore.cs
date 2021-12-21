@@ -15,7 +15,11 @@ namespace ShoppingCartAPI.Model
 
         public void Save(ShoppingCart shoppingCart)
         {
-            // Nothing needed. Saving would be needed with a real DB
+            int userId = shoppingCart.GetUserId();
+            if (database.ContainsKey(userId))
+            {
+                database[userId] = shoppingCart;
+            }
         }
     }
 }

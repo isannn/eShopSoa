@@ -17,7 +17,9 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Assets", "Assets", "{E478B3
 		README.md = README.md
 	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ShoppingCartAPI", "ShoppingCartAPI\ShoppingCartAPI.csproj", "{98A90BBB-20ED-4AD5-923E-F12C3F5BFE77}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ShoppingCartAPI", "ShoppingCartAPI\ShoppingCartAPI.csproj", "{98A90BBB-20ED-4AD5-923E-F12C3F5BFE77}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LoyaltyProgramService", "LoyaltyProgramService\LoyaltyProgramService.csproj", "{A06F2A32-5928-45B5-BCEC-4620F1AB7F83}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -37,6 +39,10 @@ Global
 		{98A90BBB-20ED-4AD5-923E-F12C3F5BFE77}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{98A90BBB-20ED-4AD5-923E-F12C3F5BFE77}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{98A90BBB-20ED-4AD5-923E-F12C3F5BFE77}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A06F2A32-5928-45B5-BCEC-4620F1AB7F83}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A06F2A32-5928-45B5-BCEC-4620F1AB7F83}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A06F2A32-5928-45B5-BCEC-4620F1AB7F83}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A06F2A32-5928-45B5-BCEC-4620F1AB7F83}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

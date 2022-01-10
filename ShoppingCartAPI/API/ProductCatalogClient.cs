@@ -12,14 +12,14 @@ namespace ShoppingCartAPI.API
 {
     public class ProductCatalogClient : IProductCatalogClient
     {
-        private static string productCatalogProductBase = "https://private-8d38cb-alekseiisaev.apiary-mock.com";
-        private static string getProductPathTemplate = "/products?productIds=[{0}]";
-        private static readonly AsyncRetryPolicy ExponentialRetryPolicy = Policy
+        private readonly string productCatalogProductBase = "https://private-8d38cb-alekseiisaev.apiary-mock.com";
+        private readonly string getProductPathTemplate = "/products?productIds=[{0}]";
+        private readonly AsyncRetryPolicy ExponentialRetryPolicy = Policy
             .Handle<Exception>()
             .WaitAndRetryAsync(
                 3, attempt => TimeSpan.FromMilliseconds(100 * Math.Pow(2, attempt)));
 
-        private static async Task<HttpResponseMessage> RequestProductFromProductCatalog(int[] productCatalogIds)
+        private async Task<HttpResponseMessage> RequestProductFromProductCatalog(int[] productCatalogIds)
         {
             var productsResource = $"{getProductPathTemplate}{string.Join(",", productCatalogIds)}";
             using (var httpClient = new HttpClient())
@@ -29,7 +29,7 @@ namespace ShoppingCartAPI.API
             }
         }
 
-        private static async Task<IEnumerable<ShoppingCartItem>> ConvertToShippingCartItems(
+        private async Task<IEnumerable<ShoppingCartItem>> ConvertToShippingCartItems(
             HttpResponseMessage response)
         {
             response.EnsureSuccessStatusCode();

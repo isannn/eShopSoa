@@ -30,8 +30,7 @@ namespace ShoppingCartAPI.API
 
                     return shoppingCart;
                 });
-            Delete("/{userid:int}/items",
-                async (parameters, _) =>
+            Delete("/{userid:int}/items", parameters =>
                 {
                     var productCatalogIds = this.Bind<int[]>();
                     var userId = (int) parameters.userid;

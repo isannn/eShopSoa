@@ -19,7 +19,9 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Assets", "Assets", "{E478B3
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ShoppingCartAPI", "ShoppingCartAPI\ShoppingCartAPI.csproj", "{98A90BBB-20ED-4AD5-923E-F12C3F5BFE77}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LoyaltyProgramService", "LoyaltyProgramService\LoyaltyProgramService.csproj", "{A06F2A32-5928-45B5-BCEC-4620F1AB7F83}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LoyaltyProgramService", "LoyaltyProgramService\LoyaltyProgramService.csproj", "{A06F2A32-5928-45B5-BCEC-4620F1AB7F83}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GatewayService", "GatewayService\GatewayService.csproj", "{963BA9A7-172C-4001-82EA-7E926B10938D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -43,6 +45,10 @@ Global
 		{A06F2A32-5928-45B5-BCEC-4620F1AB7F83}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A06F2A32-5928-45B5-BCEC-4620F1AB7F83}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A06F2A32-5928-45B5-BCEC-4620F1AB7F83}.Release|Any CPU.Build.0 = Release|Any CPU
+		{963BA9A7-172C-4001-82EA-7E926B10938D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{963BA9A7-172C-4001-82EA-7E926B10938D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{963BA9A7-172C-4001-82EA-7E926B10938D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{963BA9A7-172C-4001-82EA-7E926B10938D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

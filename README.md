@@ -1,7 +1,7 @@
 ![build status](https://github.com/isannn/eShopSoa/actions/workflows/ci.yml/badge.svg)
 
 # eShopSoa
-Solution for book "Microservices on dotnet platform"
+Solution for book "Microservices in .NET Core",  1st edition.
 
 
 ## Mocking return data for Product Catalog service
